@@ -20,6 +20,13 @@ describe("Gilded Rose", function() {
     expect(items[0].quality).toEqual(2);
   });
 
+    it("Qualität darf nie über 50 steigen – auch bei 'Aged Brie'", function() {
+    items = [ new Item("Aged Brie", 2, 50) ];
+    update_quality();
+    expect(items[0].sell_in).toEqual(1);
+    expect(items[0].quality).toEqual(50); // bleibt bei 50
+  });
+
 
 });
 
