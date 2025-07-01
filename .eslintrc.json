@@ -1,0 +1,21 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jasmine": true
+  },
+  "extends": "airbnb-base",
+  "rules": {
+    "no-var": "error",
+    "prefer-const": "error",
+    "eqeqeq": "error",
+    "no-unused-vars": "error",
+    "no-magic-numbers": ["warn", { "ignore": [0, 1, 50, 80], "ignoreArrayIndexes": true }],
+    "max-len": ["warn", { "code": 100 }],
+    "curly": "error",
+    "brace-style": ["error", "1tbs"],
+    "consistent-return": "error",
+    "semi": ["error", "always"],
+    "indent": ["error", 2]
+  }
+}
